@@ -1,0 +1,14 @@
+{
+  "name": "voteaws",
+  "version": "0.0.1",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "signer": "git+https://github.com/VoteOnEthereum/Signer.git"
+  }
+}
