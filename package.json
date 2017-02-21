@@ -1,5 +1,5 @@
 {
-  "name": "voteaws",
+  "name": "signer-aws-lambda",
   "version": "0.0.1",
   "description": "",
   "main": "handler.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "signer": "git+https://github.com/VoteOnEthereum/Signer.git"
+    "signer": "git+https://github.com/Vote-On-Ethereum/Signer.git"
   }
 }
