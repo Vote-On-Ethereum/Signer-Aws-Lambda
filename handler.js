@@ -46,6 +46,7 @@ module.exports.sign = (event, context, callback) => {
   }
   catch(error) {
     console.log("error", error)
+    let errorMessage = error.message !== undefined ? error.message : error
     const response = {
       statusCode: 400,
       headers: {
@@ -53,7 +54,7 @@ module.exports.sign = (event, context, callback) => {
           "Access-Control-Allow-Credentials" : true // Required for cookies, authorization headers with HTTPS
         },
       body: JSON.stringify({
-        "error": error.message,
+        "error": errorMessage,
       }),
     }
     callback(null, response)
